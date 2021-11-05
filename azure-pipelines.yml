@@ -10,11 +10,5 @@ pool:
   name: Default
 
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'path'
-    jdkDirectory: 'C:\Program Files\Java\jdk-17.0.1'
-    publishJUnitResults: false
-    goals: 'package'
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
